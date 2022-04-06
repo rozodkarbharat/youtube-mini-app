@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#navbar{
+display: flex;
+
+ align-items: center;
+ box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+width: 85%;
+margin: auto;
+}
+#navbar div:first-child{
+
+ margin-left: 1%;
+    width: 30px;
+ height: 25px;
+ overflow: hidden;
+
+}
+hr{
+    padding: 1%;
+    margin: 10%;
+    height: 0.px;
+    background-color: black;
+}
+#navbar div:nth-child(2) img{
+ width: 100px;
+ height: 50px;
+
+ margin: 0px;
+ padding: 0px;
+
+
+}
+#navbar div:nth-child(2){
+ margin-left: 3%;
+}
+
+#navbar div:nth-child(4) img{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+}
+#navbar div:nth-child(3) img{
+    height: 35px;
+    width: 50px;
+    background-color: white;
+border: .5px solid black;
+margin: 0;
+padding: 0;
+}
+#navbar div:nth-child(3) input{
+height: 31.6px;
+width: 450px;
+}
+#navbar div:nth-child(3) {
+  display: flex;
+  align-items: center;
+  margin-left: 12%;
+}
+#navbar div:nth-child(4){
+      height: 40px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 0.5%;
+}
+#navbar div:nth-child(5) img{
+     height: 30px;
+    width: 30px;
+}
+#navbar div:nth-child(5) {
+    margin-left: 20%;
+}
+#navbar div:nth-child(6){
+   margin-left: 2%;
+}
+#navbar div:nth-child(7){
+   margin-left: 2%;
+}
+#navbar div:nth-child(6) img{
+     height: 30px;
+    width: 30px;
+      
+}
+#navbar div:nth-child(7) img{
+     height: 30px;
+    width: 30px;
+}
+#navbar div:nth-child(8) img{
+
+     height: 30px;
+    width: 30px;
+}
+#navbar div:nth-child(8){
+    display: flex;
+       align-items: center;
+       border: 0.5px solid blue;
+       color: blue;
+    margin-left: 5%;
+}
+#navbar div:nth-child(8){
+    width: 10%;
+}
+#search_results{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+
+}
+#search_results div{ box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; }
+#searchbtn{
+    cursor: pointer;
+}
+@media only screen and (max-width:380px) {
+    #search_results{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 2%;
+      width: 80%;
+    margin: auto;
+
+}
+/* #navbar{
+    display: none;
+} */
+#search_results div{ box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; 
+    
+}
+
+#search{
+
+  
+}
+}
+</style>
+<body>
+    <div id="navbar">
+     <div>
+        <hr><hr><hr>
+     </div>
+     <div>
+         <img src="https://logos-world.net/wp-content/uploads/2020/04/YouTube-Logo-700x394.png" alt="">
+     </div>
+     <div>
+        <input type="text" id="search" placeholder="Search">
+        <img id="searchbtn" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvuyrXDbPXoV2qXKQ7ZnfTk7kbVczJM_Xq89piO7FG6-raSZUg
+" alt="">
+     </div>
+     <div><img src="https://cdn5.vectorstock.com/i/1000x1000/47/19/audio-icon-symbol-premium-quality-isolated-mike-vector-16384719.jpg" alt=""></div>
+     <div>
+         <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTp8SU6X5VzNnTGDNw3RG01uRxq6bfmqVm3NsunFMdHF5HfRE3H" alt="">
+     </div>
+     <div>
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxU4xEPNKy17pKUBfUNFnlyDCn4aJw6s6qF4Rky9AfUZ3G-RL2" alt="">
+     </div>
+     <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTscU7lQph-jwHIOnqfwKKjGZETtRx621FT8cW8UG_F-0omn_y4" alt=""></div>
+     <div>
+         <p>Sign In</p>
+         <img src="https://previews.123rf.com/images/alekseyvanin/alekseyvanin1801/alekseyvanin180100897/93405661-icono-de-l%C3%ADnea-de-avatar-de-cuenta-de-usuario-signo-de-vector-de-contorno-pictograma-de-estilo-linea.jpg" alt="">
+     </div>
+    </div>
+
+
+<div id="search_results"></div>
+
+</body>
+</html>
+<SCRIpt>
+// url //    'https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=football&key=[YOUR_API_KEY]'
+//    api key  // AIzaSyC0Oyp1nFuGW0lPPwxJD - KyIiVCJyN2u_E
+ 
+
+        var search_results = document.getElementById("search_results")
+
+  
+ 
+    // const searchvideo= async ()=>{
+  document.querySelector("#searchbtn").addEventListener("click",async function(){
+
+        let input= document.getElementById("search").value
+        var res= await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${input}&key=AIzaSyC0Oyp1nFuGW0lPPwxJD - KyIiVCJyN2u_E&maxResults=50`)
+        var data1=await res.json()
+   var data =data1.items
+        // console.log(data)
+        appenddata(data)
+    
+
+
+     
+    })
+      let appenddata = (data) => {
+           search_results.innerHTML = null
+            data.forEach((elem) => {
+               
+                
+                    var div=document.createElement("div")
+
+                    var iframe = document.createElement("iframe")
+                      var x= elem.id.videoId
+                    iframe.src = `https://www.youtube.com/embed/${x}`;
+                    iframe.allow="fullscreen"
+                    var title = document.createElement("p")
+                    title.innerHTML = elem.snippet.title
+               
+        // console.log(elem.id.videoId)
+
+                    div.append(iframe, title)
+                     search_results.append(div)
+
+               
+            });
+        }
+        let appendvideo = (data) => {
+                search_results.innerHTML = null
+                
+                data.forEach((elem) => {
+
+
+                    var div = document.createElement("div")
+
+                    var iframe = document.createElement("iframe")
+                    
+                    var x = elem.id.videoId
+                    iframe.src = `https://www.youtube.com/embed/${x}`;
+                    iframe.allow = "fullscreen"
+                    var title = document.createElement("p")
+                    title.innerHTML = elem.snippet.title
+
+                    // console.log(elem.id.videoId)
+
+                    div.append(iframe, title)
+                    search_results.append(div)
+
+
+                });
+            }
+//    appenddata(data)
+//   async  function  showvideo()
+//  {   var res = await fetch(`GET https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${input}&key=AIzaSyC0Oyp1nFuGW0lPPwxJD - KyIiVCJyN2u_E&maxResults=50/search?part=snippet
+// &forMine=true
+// &order=viewCount
+// &type=video`)
+//     var data1 = await res.json()
+//     var data = data1.items
+//     console.log(data)
+//     appendvideo(data)
+// }
+//    
+
+//  most popular videos https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=${input}&key=AIzaSyC0Oyp1nFuGW0lPPwxJD - KyIiVCJyN2u_E
+
+
+ async function trending(){
+
+var res= await fetch(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=US&key=AIzaSyC0Oyp1nFuGW0lPPwxJD - KyIiVCJyN2u_E&maxResults=50`)
+var data1= await res.json()
+     var data2 = data1.items
+console.log(data2)
+
+     appendtrendingdata(data2)
+
+ }
+
+
+
+    let appendtrendingdata = (data) => {
+            search_results.innerHTML = null
+            data.forEach((elem) => {
+
+
+                var div = document.createElement("div")
+
+                var iframe = document.createElement("iframe")
+                var x = elem.id
+                iframe.src = `https://www.youtube.com/embed/${x}`;
+                iframe.allow = "fullscreen"
+                var title = document.createElement("p")
+                title.innerHTML = elem.snippet.title
+
+                // console.log(elem.id.videoId)
+
+                div.append(iframe, title)
+                search_results.append(div)
+
+
+            });
+        }
+    trending()
+      
+
+</SCRIpt>
+<!-- c1qlo4natGE -->
+
+
+<!-- GET {base_URL}/search?part=snippet
+&forMine=true
+&order=viewCount
+&type=video -->
