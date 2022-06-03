@@ -21,10 +21,10 @@
 
 <h3>Snippets</h3>
 <div>
-<img src="https://miro.medium.com/max/1400/1*VZfy4rPglIO9cyK0R2NinA.png"/>
+<img src="./images/Screenshot (327).png"/>
 <div/>
   <div>
-<img src="https://miro.medium.com/max/1400/1*ptwFVOj6ZFAWaq8dLFW0PA.png"/>
+<img src="./images/Screenshot (328).png"/>
 <div/>
     <div>
 <img src="https://miro.medium.com/max/1400/1*oJTorLreLl_M7CIuaOgSIg.png"/>
