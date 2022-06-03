@@ -26,12 +26,4 @@
   <div>
 <img src="./images/Screenshot (328).png"/>
 <div/>
-    <div>
-<img src="https://miro.medium.com/max/1400/1*oJTorLreLl_M7CIuaOgSIg.png"/>
-<div/>
-      <div>
-<img src="https://miro.medium.com/max/1400/1*LN-BL8kj6F9sav-YpUHdqQ.png"/>
-<div/>
-        <div>
-<img src="https://miro.medium.com/max/1400/1*hL2Kbjjar4K33gdIxHhI5Q.png"/>
-<div/>
+
